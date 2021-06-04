@@ -63,7 +63,9 @@ export const getStaticProps = async ({ params }) => {
 		props: {
 			post
 		},
-		revalidate: 1
+		revalidate: 1 // revalidate : khi api có sự thay đổi thì hệ thống sẽ load lấy lại dữ liệu mới
+		// 1 là trong 1s quét lại dữ liệu từ api, nếu k có revalidate thì k cập nhật đc thay đổi mới
+		// từ api
 	}
 }
 
